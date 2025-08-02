@@ -24,8 +24,8 @@ jobs:
           java-version: 17
           distribution: temurin
 
-      - name: Build backend without tests
-        run: mvn clean install -DskipTests
+      - name: Build backend with tests
+        run: mvn clean verify
 
   build-frontend:
     runs-on: ubuntu-latest
